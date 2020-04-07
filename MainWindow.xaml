@@ -1,0 +1,29 @@
+﻿<Window x:Class="MediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="394.316" Width="593.316">
+    <Grid Margin="0,0,0,0">
+        <MediaElement x:Name="mediaElement1" HorizontalAlignment="Left" Height="202" Margin="7,4,0,0" VerticalAlignment="Top" Width="573" RenderTransformOrigin="-0.945,-0.616" LoadedBehavior="Manual" UnloadedBehavior="Manual" MediaOpened="mediaElement1_MediaOpened"/>
+        <Slider x:Name="slider1" HorizontalAlignment="Left" Margin="19,211,0,0" VerticalAlignment="Top" Width="549" ValueChanged="slider1_ValueChanged"/>
+        <Slider x:Name="slider2" HorizontalAlignment="Left" Margin="479,235,0,0" VerticalAlignment="Top" Width="98" Height="19" RenderTransformOrigin="0.51,0.053" ValueChanged="slider2_ValueChanged"/>
+        <Label Content="Volume" HorizontalAlignment="Left" Margin="420,231,0,0" VerticalAlignment="Top" Width="54" Height="36"/>
+        <Button HorizontalAlignment="Left" Margin="187,237,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Button_Click">
+            <Image Source="D:\ITI intake40\WPF\Final Project\img\stop.png" RenderTransformOrigin="-1.182,0.826">
+            </Image>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="319,239,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Button_Click_1">
+            <Image Source="D:\ITI intake40\WPF\Final Project\img\pause.png" RenderTransformOrigin="1.7,0.469"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="240,237,0,0" VerticalAlignment="Top" Width="70" Height="70" Click="Button_Click_2">
+            <Image Source="D:\ITI intake40\WPF\Final Project\img\play.png" Height="70" Width="70"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="32,233,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Button_Click_3">
+            <Image Source="D:\ITI intake40\WPF\Final Project\img\folder.png"/>
+        </Button>
+
+    </Grid>
+</Window>
